@@ -10,11 +10,6 @@ lets say, every integer needs to be multiplied by 2. And this needs to be done u
 - Create an `Array[Int]` (see tipps and tricks on how to do this in Scala)
 - Instantiate a dedicated fork-join pool with a *parallism level* that reflects your system's number of processors/cores; class `Runtime` does provide this information
 
-### Iterative approach with mutable array
-
-- Define a class `IterativeMutable` that defines and creates (sub-)task(s) in an iterative way; the integers are directly manipulated in the given mutable array
-- Use class `RecursiveAction` here
-
 ### Recursive approach with mutable array
 
 - Define a class `RecursiveMutable` that creates sub-tasks recursively; the integers are directly manipulated in the given mutable array
@@ -25,6 +20,12 @@ lets say, every integer needs to be multiplied by 2. And this needs to be done u
 
 - Define a class `RecursiveImmutable` that creates sub-tasks that return immutable collections of the manipulated integer values; the task should return a `List[Int]` with the computed integers
 - Use class `RecursiveTask[V]` for your task definitions
+
+### Iterative approach
+
+- Define a class `IterativeMutable` that defines and creates sub-tasks in an iterative way
+- Use class `RecursiveAction` here
+
 
 ### Additional Questions
 
