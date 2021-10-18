@@ -37,6 +37,7 @@ lets say, every integer needs to be multiplied by 2. And this needs to be done u
 ## Tipps and tricks
 
 - "Classical" for-loops do not exist in Scala. Use `Range` instead with expressions like `val inclusiveRange = 1 to 100` or `val exclusiveRange = 1 until 100 by 2` and iterate through it using `for(elem <- range) expr` or `Range::foreach`
+- Class `Range` does have a `toArray` method
 
 ## Useful resources
 
