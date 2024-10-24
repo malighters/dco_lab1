@@ -1,5 +1,9 @@
 # Fork-Join Pool Lab Unit
 
+Hi! It's my implementation of lab unit #1 of course "Distributed Computing" at OTH Regensburg.
+
+The task is below:
+
 Consider a very big array of integer values that need to be manipulated,
 lets say, every integer needs to be multiplied by 2. And this needs to be done using a fork-join pool.
 
